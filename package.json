@@ -1,0 +1,14 @@
+{
+  "name": "django-next-graphql",
+  "private": true,
+  "scripts": {
+    "install": "poetry install",
+    "all:dev": "yarn workspaces foreach -piA run dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "api",
+  "private": true,
+  "scripts": {
+    "poetry": "poetry",
+    "install": "poetry install",
+    "mg": "python manage.py",
+    "dev": "python manage.py runserver"
+  }
+}
