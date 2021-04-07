@@ -8,6 +8,10 @@ module.exports = {
           source: "/api/graphql/",
           destination: "http://localhost:8000/graphql/",
         },
+        {
+          source: "/static/:path*",
+          destination: "http://localhost:8000/static/:path*",
+        },
       ],
       fallback: [
         // Fall back to the django application

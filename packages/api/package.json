@@ -5,6 +5,7 @@
     "poetry": "poetry",
     "install": "poetry install",
     "mg": "python manage.py",
+    "api:mg": "python manage.py",
     "dev": "python manage.py runserver"
   }
 }

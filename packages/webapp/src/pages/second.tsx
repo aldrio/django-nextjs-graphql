@@ -8,6 +8,10 @@ export const Index = () => {
     query: gql`
       {
         motd
+        allIngredients {
+          id
+          name
+        }
       }
     `,
   });
@@ -27,12 +31,22 @@ export const Index = () => {
 
   return (
     <div>
-      <h1>Message of the day</h1>
+      <h1>Message of the day (again):</h1>
       <p>{data.motd}</p>
       <ol>
-        <li><Link href="/accounts/login">Login</Link></li>
-        <li><Link href="/second">Second page</Link></li>
-        <li><Link href="/graphql">GraphQL debug client</Link></li>
+        <li>
+          <Link href="/accounts/login">Login</Link>
+        </li>
+        <li>
+          <Link href="/">Index page</Link>
+        </li>
+      </ol>
+      <hr />
+      <h2>Ingredients:</h2>
+      <ol>
+        {data.allIngredients.map((i) => (
+          <li key={i.id}>{i.name}</li>
+        ))}
       </ol>
     </div>
   );

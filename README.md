@@ -29,3 +29,12 @@ To start developing in this repository you only need nix
 Install the dependencies with `yarn install`. (This will also install the poetry dependencies).
 
 Run `yarn all:dev` to start both the API and the webapp
+
+Initial setup:
+
+1. Migrate the database: `yarn api:mg migrate`
+2. Create a user: `yarn api:mg createsuperuser`
+3. Load `yarn api:mg loaddata cookbook`
+
+Now when you view the nextjs generated landing page, you can click through to the django hosted login page and log in.
+When you return to any nextjs routes you should still be logged in.
