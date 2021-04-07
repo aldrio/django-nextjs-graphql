@@ -31,6 +31,7 @@ export const Index = () => {
       <p>{data.motd}</p>
       <ol>
         <li><Link href="/accounts/login">Login</Link></li>
+        <li><Link href="/admin">Admin</Link></li>
         <li><Link href="/second">Second page</Link></li>
         <li><Link href="/graphql">GraphQL debug client</Link></li>
       </ol>
