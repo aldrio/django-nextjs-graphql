@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "install": "poetry install",
-    "all:dev": "yarn workspaces foreach -piA run dev"
+    "all:dev": "yarn workspaces foreach -piA run dev",
+    "build:docker": "docker build -t dng/workspace ."
   },
   "workspaces": [
     "packages/*"
