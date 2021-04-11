@@ -6,6 +6,8 @@
     "install": "poetry install",
     "mg": "python manage.py",
     "api:mg": "python manage.py",
-    "dev": "python manage.py runserver"
+    "dev": "python manage.py runserver",
+    "start": "daphne config.asgi:application",
+    "build:docker": "docker build -t dng/api ."
   }
 }
