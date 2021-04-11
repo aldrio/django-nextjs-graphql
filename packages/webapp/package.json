@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:docker": "yarn build && docker build -t dng/webapp ."
   },
   "dependencies": {
     "graphql": "^15.5.0",

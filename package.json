@@ -4,7 +4,8 @@
   "scripts": {
     "install": "poetry install",
     "all:dev": "yarn workspaces foreach -piA run dev",
-    "build:docker": "docker build -t dng/workspace ."
+    "build:docker": "docker build -t dng/workspace .",
+    "all:build:docker": "yarn workspaces foreach -v run build:docker"
   },
   "workspaces": [
     "packages/*"
